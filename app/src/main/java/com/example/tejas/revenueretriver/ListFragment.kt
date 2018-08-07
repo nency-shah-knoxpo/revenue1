@@ -83,21 +83,7 @@ abstract class ListFragment<T, VH : RecyclerView.ViewHolder> : Fragment() {
 
         listAdapter = ListAdapter(activity)
         itemListRV?.adapter = listAdapter
-        itemListRV?.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView?, dx: Int, dy: Int) {
-                if (dy > 0) {
-                    val totalItems = listAdapter?.itemCount
-                    var lastVisibleItem = 0
-                    if (manager is LinearLayoutManager) {
-                        lastVisibleItem = (manager as LinearLayoutManager).findLastVisibleItemPosition()
-                    }
 
-                    if (lastVisibleItem + threshold >= totalItems!! && !isFetching) {
-                        fetchItems()
-                    }
-                }
-            }
-        })
 
         fetchItems()
     }

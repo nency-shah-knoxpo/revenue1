@@ -27,6 +27,5 @@ abstract class SingleFragmentActivity : AppCompatActivity() {
         return R.layout.activity_single_fragment
     }
 
-    val containedFragment: Fragment?
-        get() = supportFragmentManager.findFragmentById(R.id.fragment_container)
+
 }

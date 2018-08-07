@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#ffa634</color>
+    <color name="colorPrimaryDark">#e0912c</color>
+    <color name="colorAccent">#2bb672</color>
     <color name="log_in_bg">#e6e6e6</color>
     <color name="sign_in_btn">#2bb673</color>
     <color name="edit_text_line">#cfcfcf</color>
+    <color name="revenue_title_orange">#d81616</color>
+    <color name="revenue_description">#7e7e7e</color>
+    <color name="recurrence">#c2c2c2</color>
 </resources>

@@ -16,7 +16,7 @@ class SignInFragment : Fragment() {
         val v = inflater.inflate(R.layout.fragment_sign_in, container, false)
        val signInBtn =  v.findViewById<Button>(R.id.signInBtn)
         signInBtn.setOnClickListener {
-            var intent = Intent(activity, MainActivity::class.java)
+            val intent = Intent(activity, MainActivity::class.java)
             startActivity(intent)
         }
         return v

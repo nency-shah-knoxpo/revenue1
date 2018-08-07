@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/log_in_bg"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/activity_padding"
+        android:layout_marginBottom="@dimen/activity_padding"
+        >
+
+        <TableRow>
+
+            <TextView
+                android:padding="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:background="@drawable/bg_bottom_right_border"
+                android:paddingEnd="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/name"
+                android:textSize="@dimen/default_text_size"
+                android:layout_marginStart="@dimen/activity_padding"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/nameET"
+                android:textSize="@dimen/default_text_size"
+                android:backgroundTint="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding"
+                tools:text="James Cameron"
+                android:layout_marginStart="@dimen/activity_padding" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="1dp"
+            android:background="@color/edit_text_line" />
+
+
+        <TableRow >
+
+            <TextView
+                android:gravity="center"
+                android:textSize="@dimen/default_text_size"
+                android:padding="@dimen/default_text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:background="@drawable/bg_bottom_right_border"
+                android:paddingEnd="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/phone"
+                android:layout_marginStart="@dimen/activity_padding"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:textSize="@dimen/default_text_size"
+                android:id="@+id/phoneET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="phone"
+                android:backgroundTint="@android:color/white"
+                tools:text="9909662296"
+                android:layout_marginStart="10dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/addPartnerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_padding"
+        android:layout_marginRight="@dimen/activity_padding"
+        android:background="@color/sign_in_btn"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
