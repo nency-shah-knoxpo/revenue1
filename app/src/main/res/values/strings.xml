@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RevenueRetriver</string>
+    <string name="log_on">Log On</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="no_data">no data</string>
+    <string name="please_wait">Please Wait</string>
+</resources>
